@@ -1,5 +1,9 @@
 [![License](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://gitlab.xfce.org/xfce/exo/COPYING)
 
+# Modified version of exo 4.18.0 for macports
+
+* Based on release https://archive.xfce.org/src/xfce/exo/4.18/exo-4.18.0.tar.bz2
+
 # exo
 
 
