@@ -42,8 +42,10 @@
 #ifdef HAVE_MATH_H
 #include <math.h>
 #endif
+#if defined(__GNUC__) && defined(__MMX__)
 #ifdef HAVE_MMINTRIN_H
 #include <mmintrin.h>
+#endif
 #endif
 #ifdef HAVE_STDLIB_H
 #include <stdlib.h>

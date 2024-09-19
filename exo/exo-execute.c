@@ -21,10 +21,6 @@
 #include <config.h>
 #endif
 
-#ifdef HAVE_GIO_UNIX
-#include <gio/gdesktopappinfo.h>
-#endif
-
 #include <gdk/gdk.h>
 #ifdef GDK_WINDOWING_X11
 #include <gdk/gdkx.h>
@@ -32,6 +28,10 @@
 
 #include <exo/exo-execute.h>
 #include <exo/exo-alias.h>
+
+#ifdef HAVE_GIO_UNIX
+#include "gdesktopappinfo_wrapper.h"
+#endif
 
 /**
  * SECTION: exo-execute

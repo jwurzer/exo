@@ -34,7 +34,7 @@
 #include <glib.h>
 #include <gio/gio.h>
 #ifdef HAVE_GIO_UNIX
-#include <gio/gdesktopappinfo.h>
+#include "../exo/gdesktopappinfo_wrapper.h"
 #endif
 #include <exo/exo.h>
 
@@ -598,7 +598,9 @@ exo_open_uri (const gchar  *uri,
   return retval;
 }
 
+#ifdef HAVE_X11
 #include <gdk/gdkx.h>
+#endif
 
 gint
 main (gint argc, gchar **argv)
